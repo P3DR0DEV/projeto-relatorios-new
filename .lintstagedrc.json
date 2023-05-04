@@ -1,0 +1,7 @@
+{
+  "*.ts": ["yarn eslint 'src/**'", "yarn prettier --check 'src/**'"],
+  "*.tsx": [
+    "yarn eslint 'frontend/src/**'",
+    "yarn prettier --check 'frontend/src/**'"
+  ]
+}

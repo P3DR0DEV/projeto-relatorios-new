@@ -1,0 +1,52 @@
+.turmas-card {
+  background-color: #fff;
+  box-shadow: rgb(114 119 128 / 5%) 0px 1px 0px 0px, rgb(114 119 128 / 5%) 0px 2px 4px 0px, rgb(114 119 128 / 5%) 0px 4px 8px 0px;
+  max-width: 80%;
+  margin: auto;
+  border-radius: 1rem;
+  display: flex;
+  gap: 0.7rem;
+  flex-direction: column;
+  padding: 0.7rem;
+}
+
+.card-header {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  border-bottom: 1px solid#eeeeef;
+  padding: 0.7rem;
+  justify-content: space-between;
+}
+
+.title {
+  text-align: center;
+}
+
+.create-turma {
+  margin: 2rem auto;
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-turma h1 {
+  font-weight: 500;
+}
+
+.button-create-turma {
+  border-radius: 24px;
+  border: none;
+  padding: 0.7rem;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 1.1rem;
+  background-color: #863bff;
+  cursor: pointer;
+}
+
+.button-create-turma:hover {
+  box-shadow: rgb(134 59 255) 0px 0px 0px 2px;
+}

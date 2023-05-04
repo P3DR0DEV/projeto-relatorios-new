@@ -1,0 +1,10 @@
+.imgcomponent {
+  font-size: 300px;
+  color: #2e3033
+}
+
+@media (max-width:600px) {
+  .imgcomponent {
+    display: none;
+  }
+}

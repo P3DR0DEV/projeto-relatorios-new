@@ -1,0 +1,55 @@
+.alunos-list {
+  margin: auto;
+  width: 90%;
+  border-bottom: 1px solid#eeeeef;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aluno-list-nome--nome {
+  font-size: 1.2rem;
+  font-weight: 500;
+  white-space: nowrap;
+  width: 65%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.aluno-list-nome {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.button-relatorios {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #863bff86;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.displayNone {
+  display: none;
+}
+
+.button-delete-user {
+  font-size: 1.2rem;
+  color: #dc3545;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-update-user {
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

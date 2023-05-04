@@ -1,0 +1,105 @@
+.dialog-relatorios {
+  margin: 1rem auto;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 80%;
+}
+
+.container-relatorios {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  background-color: #fff;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  box-shadow: rgb(114 119 128 / 5%) 0px 1px 0px 0px, rgb(114 119 128 / 5%) 0px 2px 4px 0px, rgb(114 119 128 / 5%) 0px 4px 8px 0px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.item-title {
+  font-size: 1.2rem;
+  margin: 1.2rem;
+}
+
+.item-title::before {
+  content: '.';
+}
+
+.label-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-item-select {
+  height: 1.3rem;
+  border-radius: 0.3rem;
+}
+
+.divisor {
+  width: 90%;
+  border: 1px solid #1e1e1e1f;
+  margin: auto;
+}
+
+.submit-form-button {
+  margin-top: 1rem;
+  display: flex;
+  align-self: flex-end;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #863bff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-form-button:hover {
+  box-shadow: rgb(134 59 255) 0px 0px 0px 2px;
+}
+
+.textarea {
+  font-size: 1.5rem;
+  resize: none;
+  padding: 0.5rem;
+  border: 1px solid #1e1e1e1f;
+  border-radius: 0.5rem;
+}
+
+.aluno-foto {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome-aluno {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-pic {
+  width: 5rem;
+  align-self: flex-end;
+  border: none;
+  background-color: #863bff;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 0.3rem;
+  border-radius: 1rem;
+}
+
+.profilePic {
+  width: 8rem;
+  height: 7rem;
+}
+
+.aluno-foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

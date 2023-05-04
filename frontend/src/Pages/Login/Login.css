@@ -1,0 +1,15 @@
+.container-login {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+  max-width: 1300px;
+  margin: auto;
+}
+
+@media (max-widht:600px) {
+  .container-login {
+    display: block;
+  }
+}

@@ -1,0 +1,14 @@
+.card-select-turma {
+  margin: auto;
+  width: 90%;
+  border-bottom: 1px solid#eeeeef;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nome-turma {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #723de8;
+}

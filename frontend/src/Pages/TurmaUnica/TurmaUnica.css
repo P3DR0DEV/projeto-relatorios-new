@@ -1,0 +1,87 @@
+.turma-unica {
+  background-color: #fff;
+  box-shadow: rgb(114 119 128 / 5%) 0px 1px 0px 0px, rgb(114 119 128 / 5%) 0px 2px 4px 0px, rgb(114 119 128 / 5%) 0px 4px 8px 0px;
+  max-width: 80%;
+  margin: 2.5rem auto;
+  border-radius: 1rem;
+  display: flex;
+  gap: 0.7rem;
+  flex-direction: column;
+  padding: 0.8rem;
+}
+
+.turma-unica-nome {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.turma-unica-nome>.link {
+  border-radius: 24px;
+  border: none;
+  padding: 0.3rem;
+  color: #fff;
+  align-self: flex-end;
+  font-size: 1.1rem;
+  background-color: #863bff;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.turma-unica-nome>.link:hover {
+  box-shadow: #863bff 0px 0px 0px 2px;
+}
+
+.nome-turma {
+  font-size: 1.4rem;
+}
+
+.turma-header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.turma-header-nome {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  max-width: 30%;
+}
+
+.turma-unica-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+.button-create-aluno {
+  border-radius: 24px;
+  border: none;
+  padding: 0.7rem;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 1.1rem;
+  background-color: #863bff;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.button-create-aluno:hover {
+  box-shadow: rgb(134 59 255) 0px 0px 0px 2px;
+}
+
+.button-create-professor {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #863bff86;
+}

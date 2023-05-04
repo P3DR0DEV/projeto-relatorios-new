@@ -1,0 +1,95 @@
+.login-form-logo>img {
+  max-width: 200px;
+}
+
+.login-form {
+  height: 100vh;
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+  width: 500px;
+}
+
+.login-form-logo {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+}
+
+.input-group {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.form-group {
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: column;
+}
+
+.form-group .user-box {
+  position: relative;
+  width: 31.25rem;
+}
+
+.form-group .user-box input {
+  width: 484px;
+  font-size: 20px;
+  padding: 21px 0px 5px 15px;
+  color: #000;
+  border: 1px solid #dedfe1;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group .user-box label {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  font-size: 20px;
+  color: #000;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.form-group .user-box input:focus~label,
+.form-group .user-box input:valid~label {
+  top: 5px;
+  left: 10px;
+  color: #282D35;
+  font-size: 12px;
+}
+
+.user-box-input {
+  padding-left: 10px;
+}
+
+.button-submit {
+  background-color: #0062ff;
+  color: #fff;
+  width: 100%;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0px;
+}
+
+.recuperar-senha {
+  text-align: end;
+  color: #282D35;
+}
+
+.login-form-logo-h3 {
+  padding-top: 1rem;
+}
+
+@media (max-widht:600px) {
+  .login-form {
+    width: 500px;
+  }
+}
