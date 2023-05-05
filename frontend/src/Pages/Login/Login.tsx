@@ -1,7 +1,5 @@
-import Form from "./Components/Form";
-import { ImgComponent } from "./Components/ImgComponent";
-import './Login.css'
-
+import { Form, ImgComponent } from "@/Components"
+import "./Login.css"
 
 export function Login() {
   return (

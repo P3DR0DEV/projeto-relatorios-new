@@ -2,12 +2,10 @@ import { Turma, fetchProps } from "@/types"
 import { useEffect, useRef, useState, MouseEvent } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { IoIosArrowBack } from "react-icons/io"
-import { AlunoList } from "./components/AlunoList"
 import { AiOutlinePlus } from "react-icons/ai"
-import { CriaAluno } from "./components/CriaAluno"
-import "./TurmaUnica.css"
-import { CriaProf } from "./components/CriaProf"
 import { fetchData } from "@/services/fetchData"
+import "./TurmaUnica.css"
+import { AlunoList, CriaAluno, CriaProf } from "@/Components"
 
 export function TurmaUnica() {
   const { id } = useParams()

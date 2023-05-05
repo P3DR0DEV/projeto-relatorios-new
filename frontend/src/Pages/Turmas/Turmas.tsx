@@ -1,12 +1,11 @@
 import { Turma, fetchProps } from "@/types"
 import { useEffect, useState, MouseEvent, useRef } from "react"
-import "./Turmas.css"
 import { AiOutlinePlus } from "react-icons/ai"
-import { CriarTurma } from "./components/CriarTurma"
-import { TurmaCard } from "./components/TurmaCard"
 import { useNavigate } from "react-router-dom"
 import { toast } from "react-toastify"
 import { fetchData } from "@/services/fetchData"
+import { CriarTurma, TurmaCard } from "@/Components"
+import "./Turmas.css"
 
 export function Turmas() {
   const [data, setData] = useState<Turma[]>([])

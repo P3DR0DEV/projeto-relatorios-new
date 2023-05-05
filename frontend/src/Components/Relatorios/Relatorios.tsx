@@ -113,14 +113,6 @@ export function Relatorios({
       }
     })
   }
-  function handleTextAreaChange(e: ChangeEvent<HTMLTextAreaElement>) {
-    const { value } = e.currentTarget
-    setTextArea(value)
-  }
-  function handleEtapaChange(e: ChangeEvent<HTMLSelectElement>) {
-    const { value } = e.currentTarget
-    setEtapa(value)
-  }
   return (
     <dialog ref={dialog} className="dialog-relatorios">
       <div className="container-relatorios">
@@ -139,7 +131,9 @@ export function Relatorios({
               <select
                 name="etapa"
                 className="label-item-select"
-                onChange={handleEtapaChange}
+                onChange={(e) => {
+                  setEtapa(e.currentTarget.value)
+                }}
                 required
               >
                 <option value="">--Selecionar--</option>
@@ -212,7 +206,9 @@ export function Relatorios({
             className="textarea"
             rows={10}
             placeholder="Considerações Finais"
-            onChange={handleTextAreaChange}
+            onChange={(e) => {
+              setTextArea(e.currentTarget.value)
+            }}
           ></textarea>
           <button className="submit-form-button">Enviar</button>
         </form>
