@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -10,18 +7,68 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
-  posts Post[]
+model Alunos {
+  id        Int      @id @default(autoincrement())
+  nome      String   @db.VarChar(255)
+  matricula Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  turma_id  Int?
+  turmas    Turmas?  @relation(fields: [turma_id], references: [id], map: "alunos_ibfk_1")
+  etapas    Etapas[]
+  fotos     Fotos[]
+
+  @@index([turma_id], map: "turma_id")
 }
 
-model Post {
-  id        Int     @id @default(autoincrement())
-  title     String
-  content   String?
-  published Boolean @default(false)
-  author    User    @relation(fields: [authorId], references: [id])
-  authorId  Int
+model Etapas {
+  id        Int          @id @default(autoincrement())
+  question  String       @default("") @db.VarChar(255)
+  answer    String       @default("") @db.VarChar(255)
+  etapa     etapas_etapa
+  aluno_id  Int?
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  alunos    Alunos?      @relation(fields: [aluno_id], references: [id], onDelete: Cascade, map: "etapas_ibfk_1")
+
+  @@index([aluno_id], map: "aluno_id")
+}
+
+model Fotos {
+  id           Int      @id @default(autoincrement())
+  originalname String   @db.VarChar(255)
+  filename     String   @db.VarChar(255)
+  aluno_id     Int?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  alunos       Alunos?  @relation(fields: [aluno_id], references: [id], map: "fotos_ibfk_1")
+
+  @@index([aluno_id], map: "aluno_id")
+}
+
+model Professors {
+  id        Int      @id @default(autoincrement())
+  nome      String   @db.VarChar(255)
+  matricula Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  turma_id  Int?
+  turmas    Turmas?  @relation(fields: [turma_id], references: [id], map: "professors_ibfk_1")
+
+  @@index([turma_id], map: "turma_id")
+}
+
+model Turmas {
+  id         Int          @id @default(autoincrement())
+  nome       String       @db.VarChar(255)
+  createdAt  DateTime     @default(now())
+  updatedAt  DateTime     @updatedAt
+  alunos     Alunos[]
+  professors Professors[]
+}
+
+enum etapas_etapa {
+  um   @map("1")
+  dois @map("2")
+  tres @map("3")
 }
