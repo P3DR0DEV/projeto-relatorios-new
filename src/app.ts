@@ -1,12 +1,11 @@
+import "dotenv/config"
 import express from "express"
 import cors from "cors"
-import { config } from "dotenv"
-import {} from "@/routes/router"
+import {} from "@/routes"
 import { resolve } from "path"
 import "@/config/database"
 
 const app = express()
-config()
 
 /**
  * Middlewares

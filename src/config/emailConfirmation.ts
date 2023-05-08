@@ -1,6 +1,5 @@
-import { config } from "dotenv"
+import "dotenv/config"
 import nodemailer, { SendMailOptions } from "nodemailer"
-config()
 
 const user = process.env.NOREPLY_USER_EMAIL
 const pass = process.env.NOREPLY_USER_PASS

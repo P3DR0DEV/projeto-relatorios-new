@@ -1,4 +1,3 @@
-import { config } from "dotenv"
-config()
+import "dotenv/config"
 
 export const url = process.env.APP_HOST as string

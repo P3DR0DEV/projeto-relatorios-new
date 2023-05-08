@@ -1,4 +1,4 @@
-import { config } from "dotenv"
+import "dotenv/config"
 import { generateToken } from "@/config"
 import { Request, Response } from "express"
 import { AuthenticationOptions, authenticate } from "ldap-authentication"
@@ -6,7 +6,6 @@ interface RequestBodyAuth {
   user: string
   pass: string
 }
-config()
 
 const domain = process.env.DOMAIN
 const permissions = [{ username: "150367" }, { username: "150176" }]

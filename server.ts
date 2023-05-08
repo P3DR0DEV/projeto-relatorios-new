@@ -1,8 +1,7 @@
+import "dotenv/config"
 import fs from "fs"
 import https, { ServerOptions } from "https"
-import { config } from "dotenv"
 import { app } from "@/app"
-config()
 
 const httpsConfigOptions: ServerOptions = {
   key: fs.readFileSync(process.env.PATH_KEY_SSH as string),

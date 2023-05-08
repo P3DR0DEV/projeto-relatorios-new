@@ -1,7 +1,6 @@
-import { config } from "dotenv"
+import "dotenv/config"
 import { NextFunction, Request, Response } from "express"
 import { verify } from "jsonwebtoken"
-config()
 
 export function validUser(req: Request, res: Response, next: NextFunction) {
   try {
